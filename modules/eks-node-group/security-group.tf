@@ -17,7 +17,7 @@ locals {
 
 module "security_group" {
   source  = "tedilabs/network/aws//modules/security-group"
-  version = "~> 0.31.0"
+  version = "~> 0.32.1"
 
   count = var.default_security_group.enabled ? 1 : 0
 
